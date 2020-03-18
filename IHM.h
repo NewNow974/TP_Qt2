@@ -22,7 +22,7 @@ private:
     QProgressBar* progressBar1;
     QSlider* slider1;
     QPushButton* b1;
-    int value=5;
+
 };
 
 

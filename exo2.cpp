@@ -30,8 +30,13 @@ void exo2::changeButton() {
     b1->setToolTip("Oui");
 
     value++;
+    QString texte = "Example"+ QString::number(value) + "\n" + e1->toPlainText();
+    e1->clear();
+    e1->setText(texte);
+
     cout << "Example" << value << endl;
 
-
+    IHM *fenetre1=new IHM;
+    //fenetre1->show();
 
 }
