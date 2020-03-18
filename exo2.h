@@ -12,6 +12,7 @@
 #include <QVBoxLayout>
 #include <QTextEdit>
 #include <QPushButton>
+#include <iostream>
 
 class exo2 : public QMainWindow {
 Q_OBJECT;
@@ -22,6 +23,8 @@ public slots:
     void changeButton();
 private:
     QPushButton *b1;
+    QTextEdit *e1;
+    int value=0;
 };
 
 

@@ -3,6 +3,7 @@
 //
 
 #include "exo2.h"
+using namespace std;
 
 exo2::exo2(QMainWindow *fenetre) {
     QWidget* mainWidget = new QWidget();
@@ -10,8 +11,10 @@ exo2::exo2(QMainWindow *fenetre) {
 
     b1 = new QPushButton("Fils");
     b1->setToolTip("Non");
+    e1 = new QTextEdit("texte initial");
 
     mainLayout->addWidget(b1);
+    mainLayout->addWidget(e1);
     mainWidget->setLayout(mainLayout);
 
     this->setCentralWidget(mainWidget);
@@ -26,5 +29,9 @@ void exo2::changeButton() {
     b1->setText("Example");
     b1->setToolTip("Oui");
 
-    QWidget* mainWidget = new QWidget();
+    value++;
+    cout << "Example" << value << endl;
+
+
+
 }
