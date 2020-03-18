@@ -19,13 +19,10 @@ IHM::IHM(QWidget *parent) : QMainWindow(parent){
     mainWidget->setLayout(mainLayout);
     this->setCentralWidget(mainWidget);
 
+    progressBar1->setValue(100);
+    slider1->setValue(100);
     QObject::connect(slider1, SIGNAL (valueChanged(int)), progressBar1, SLOT (setValue(int)));
-    emit signalValueChanged(3);
 
 }
 
-void IHM::slotSetValue(int value) {
 
-    this->value=value;
-
-}
