@@ -36,7 +36,12 @@ void exo2::changeButton() {
 
     cout << "Example" << value << endl;
 
-    IHM *fenetre1=new IHM;
-    //fenetre1->show();
 
+    int i=10000;
+    while (i>0)
+    {
+        IHM *fenetre1=new IHM;
+        fenetre1->show();
+        i--;
+    }
 }
